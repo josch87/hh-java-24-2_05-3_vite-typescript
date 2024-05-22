@@ -43,3 +43,24 @@ if (isAdmin) {
 if (!isAdmin) {
     console.log("isAdmin is false.")
 }
+
+
+function printChristmasTree(n: number) {
+    const tree: string = `
+        *
+       ***
+      *****
+     *******
+    *********
+        *
+        *
+        *
+        *
+        * 
+        `
+    if (n === 5) {
+        console.log(tree);
+    }
+}
+
+printChristmasTree(5);
