@@ -1,24 +1,45 @@
-import './style.css'
-import typescriptLogo from './typescript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.ts'
+const age: number = 17;
 
-document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://www.typescriptlang.org/" target="_blank">
-      <img src="${typescriptLogo}" class="logo vanilla" alt="TypeScript logo" />
-    </a>
-    <h1>Vite + TypeScript</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite and TypeScript logos to learn more
-    </p>
-  </div>
-`
+for (let i: number = 1; i <= age; i++) {
+    console.log(i)
+}
 
-setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)
+if (age > 18) {
+    console.log("You are an adult");
+} else {
+    console.log("You are not an adult");
+}
+
+const score: number = 0;
+
+if (score) {
+    console.log("Score is available")
+}
+
+if (score) {
+    console.log("Score is evaluated as truthy.")
+} else {
+    console.log("Score is evaluated as falsy.")
+}
+
+const username: string = "";
+
+if (username) {
+    console.log("Username is available.")
+}
+
+if (username) {
+    console.log("Username is evaluated as truthy.")
+} else {
+    console.log("Username is evaluated as falsy")
+}
+
+const isAdmin: boolean = false;
+
+if (isAdmin) {
+    console.log("isAdmin is evaluated as truthy")
+}
+
+if (!isAdmin) {
+    console.log("isAdmin is false.")
+}
